@@ -3,9 +3,6 @@
   margin: 0;
 }
 
-body {
-}
-
 @font-face {
   font-family: playfair-display;
   src: url(./fonts/PlayfairDisplay-Medium.ttf);
@@ -25,8 +22,8 @@ body {
   background: linear-gradient(
     170deg,
     rgb(12, 134, 132),
-    rgb(12, 134, 132) 40%,
-    white 40%,
+    rgb(12, 134, 132) 30%,
+    white 30%,
     white
   );
   display: flex;
@@ -34,6 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding-bottom: 80px;
 }
 
 .info {
@@ -48,9 +46,13 @@ body {
   display: inline-block;
 }
 
-.dog {
+.dog-1 {
   width: 250px;
   padding: 50px 0px 100px 50px;
+}
+
+.dog-2 {
+  max-width: 400px;
 }
 
 .my-name {
@@ -138,4 +140,36 @@ h2 {
 
 .project-info {
   text-align: center;
+}
+
+footer {
+  background-color: rgb(12, 134, 132);
+}
+
+.contact-me {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  padding: 50px;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.footer-icon {
+  width: 30px;
 }
