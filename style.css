@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .info {
@@ -66,10 +67,10 @@ body {
   background-color: rgb(251, 251, 251);
   margin-right: 50px;
   padding: 30px;
-  box-shadow: 5px 5px #b3b0b14b;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   position: relative;
 }
 
@@ -100,14 +101,15 @@ body {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
 }
 
 .project-content {
-  /* display: flex;
-  flex-direction: column; */
-  /* gap: 12px; */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .project-img {
@@ -124,7 +126,14 @@ h2 {
   flex-direction: column;
   gap: 5px;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.project-icon {
+  position: absolute;
+  top: -1px;
+  right: 10px;
 }
 
 .project-info {
