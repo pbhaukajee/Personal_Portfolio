@@ -2,6 +2,17 @@
   padding: 0;
   margin: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(
+    170deg,
+    rgb(12, 134, 132),
+    rgb(12, 134, 132) 30%,
+    white 30%,
+    white
+  ); */
+}
 
 @font-face {
   font-family: playfair-display;
@@ -18,14 +29,24 @@
   src: url(./fonts/Roboto-Light.ttf);
 }
 
+.top-container {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.top-color {
+  background-color: rgb(12, 134, 132);
+  width: 200vw;
+  height: 100vh;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translateX(35%) rotate(-8deg);
+  z-index: 0;
+}
 .background-container {
-  background: linear-gradient(
-    170deg,
-    rgb(12, 134, 132),
-    rgb(12, 134, 132) 30%,
-    white 30%,
-    white
-  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +64,6 @@
 
 .image-container {
   position: relative;
-  display: inline-block;
 }
 
 .dog-1 {
@@ -72,13 +92,13 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 10px;
   position: relative;
 }
 
 .about-description {
   font-family: roboto-light;
   font-weight: lighter;
+  padding: 20px;
 }
 
 .images {
@@ -93,7 +113,6 @@
 
 .icon {
   width: 20px;
-  align-self: flex-end;
 }
 
 .my-work {
@@ -144,6 +163,7 @@ h2 {
 
 footer {
   background-color: rgb(12, 134, 132);
+  width: 100%;
 }
 
 .contact-me {
@@ -172,4 +192,43 @@ footer {
 
 .footer-icon {
   width: 30px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background: linear-gradient(
+      170deg,
+      rgb(12, 134, 132),
+      rgb(12, 134, 132) 20%,
+      white 20%,
+      white
+    );
+  }
+
+  .dog-1 {
+    width: 280px;
+    height: auto;
+    padding: 50px 0px 10px 50px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .about {
+    width: 100%;
+    margin-left: auto;
+    margin-right: -90px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    width: 100%;
+    margin-right: -90px;
+    margin-left: auto;
+  }
 }
