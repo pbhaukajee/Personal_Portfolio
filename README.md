@@ -1,4 +1,4 @@
 # Personal_Portfolio
 
-Liver preview: https://pbhaukajee.github.io/Project_Homepage/
+Live preview:https://pbhaukajee.github.io/Personal_Portfolio/
 
