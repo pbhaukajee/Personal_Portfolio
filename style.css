@@ -257,3 +257,39 @@ footer {
     align-self: center;
   }
 }
+
+@media (max-width: 600px) {
+  .about-container {
+    max-width: 400px;
+  }
+
+  p {
+    margin-left: 40px;
+    padding: 0 10px 0 10px;
+  }
+
+  footer {
+    max-width: 400px;
+  }
+
+  .pic-2 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-container {
+    max-width: 350px;
+  }
+  p {
+    font-size: small;
+  }
+
+  footer {
+    max-width: 400px;
+  }
+
+  .pic-2 {
+    max-width: 400px;
+  }
+}
