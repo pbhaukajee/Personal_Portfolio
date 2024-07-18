@@ -181,7 +181,7 @@ footer {
   filter: invert(100%);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .background-top {
     top: -550px;
   }
